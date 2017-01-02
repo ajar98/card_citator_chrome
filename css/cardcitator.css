@@ -1,0 +1,152 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+nav {
+    background-color: #ffffff;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+#citation-heading {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+#options {
+  margin-top: -45px;
+  float: right;
+}
+
+#help {
+    margin-top: -45px;
+    float: left;
+    position: relative;
+}
+
+td {
+  font-size: small;
+}
+
+td #key {
+    width: 10%;
+}
+
+.table>tbody>tr.danger>td, .table>tbody>tr.danger>th, .table>tbody>tr>td.danger, .table>tbody>tr>th.danger, .table>tfoot>tr.danger>td, .table>tfoot>tr.danger>th, .table>tfoot>tr>td.danger, .table>tfoot>tr>th.danger, .table>thead>tr.danger>td, .table>thead>tr.danger>th, .table>thead>tr>td.danger, .table>thead>tr>th.danger {
+    color: #BD3737;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.table-hover>tbody>tr {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}    
+
+.danger > #value > .form-control:focus {
+    border-color: #BD3737;
+}
+
+.danger > .form-control {
+    border: 1px solid #BD3737;
+}
+
+#complete {
+    width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+ol {
+    counter-reset:li; /* Initiate a counter */
+    margin-left:0; /* Remove the default left margin */
+    padding-left:0; /* Remove the default left padding */
+}
+ol > li {
+    position:relative; /* Create a positioning context */
+    margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
+    padding:4px 8px; /* Add some spacing around the content */
+    list-style:none; /* Disable the normal item numbering */
+    border-top:2px solid #666;
+    background:#f6f6f6;
+}
+ol > li:before {
+    content:counter(li); /* Use the counter as content */
+    counter-increment:li; /* Increment the counter by 1 */
+    /* Position and style the number */
+    position:absolute;
+    top:-2px;
+    left:-2em;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    width:2em;
+    /* Some space between the number and the content in browsers that support
+       generated content but not positioning it (Camino 2 is one example) */
+    margin-right:8px;
+    padding:4px;
+    border-top:2px solid #666;
+    color:#fff;
+    background:#BD3737;
+    font-weight:bold;
+    font-family:"Helvetica Neue", Arial, sans-serif;
+    text-align:center;
+}
+li ol,
+li ul {margin-top:6px;}
+ol ol li:last-child {margin-bottom:0;}
+
+.form-control {
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: #767676;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-success {
+    border: none;
+    background-color: #79AD5B;
+}
+
+input {
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    cursor:default;
+}
+
+h3 {
+    text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+  padding-bottom: 15px;
+}
+
+label {
+    margin-left: 9px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

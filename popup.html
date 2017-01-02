@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Card Citator</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/cardcitator.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src='js/date-en-US.js'></script>
+    <script src='js/jquery-1.11.3.min.js'></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+      html { width:500px; height:600px; }
+      body { height: 580px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div id="container-1">
+          <h3 id="citation-heading"><img id="options-logo" src="img/icon16.png"></img> Card Citator</h3>
+          <button type="button" class="btn btn-default btn-xs" id='options'><i class="fa fa-cog fa-fw"></i></button>
+          <button type="button" class="btn btn-default btn-xs" id='help'><i class="fa fa-question fa-fw"></i></button>
+        </div>
+      </nav>
+      <br><br><br><br>
+      <div id="container-2">
+        <table class="table table-hover" id="citation">
+          <tr id="author"></tr>
+          <tr id="quals"></tr>
+          <tr id="org"></tr>
+          <tr id="title"></tr>
+          <tr id="date"></tr>
+          <tr id="selection"></tr>
+        </table>
+        <button type="button" id='complete' class="btn btn-success">Complete citation</button>
+        <p id='final citation' style='font-size: 10px;'></p>
+        <p id='clipboard' class='text-danger' style='text-align: center; font-size: small;'></p>
+      </div>
+    </div>
+    <script src="js/popup.js"></script>
+  </body>
+</html>
+

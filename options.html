@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Card Citator Options</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/options.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src='js/date-en-US.js'></script>
+    <script src="js/options.js"></script>
+    <script src='js/jquery-1.11.3.min.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1><img id="options-logo" src="img/icon16.png"></img> Card Citator</h1>
+      <hr>
+      <table>
+      <tr>
+      <td style='width: 50%;'>
+        <h3>Citation Format</h2>
+        <label>
+          <input type="checkbox" id="standard" name="format">
+          Use standard citation format: [author, qualifications, organization, "title," date, link]
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" id="custom" name="format">
+          Custom citation format
+        </label>
+        <input class="form-control" type="text" id="input custom" placeholder="Replace each attribute of the citation with its first letter (e.g. author &rarr; a)"></input>
+        <hr>
+        <h3>Date Format</h2>
+        <label>
+          <input type="checkbox" id="standard date" name="dateFormat">
+          Use standard date format 'MM/dd/yy'
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" id="custom date" name="dateFormat">
+          Custom date format
+        </label>
+        <input class="form-control" type="text" id="input custom date" placeholder="Use M as month, d as day, y as year"></input>
+        <hr>
+        <label>
+          <input type="checkbox" id="copyToClipboard">
+          Copy the citation and selection to your clipboard
+        </label>
+        <label>
+          <input type="checkbox" id="dateAccessed">
+          Add the date accessed to the end of your citation
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" id="initials">
+          Add your initials to the end of your citation
+        </label>
+        <input class="form-control" type="text" id="input initials" placeholder="Enter your initials"></input>
+        <br>
+        <label>
+          <input type="checkbox" id="saveCitation">
+          Save each citation
+        </label>
+        <br>
+        <button style="padding: 10px" id="clearSave" type="button" class="btn">Clear Save History</button>
+        <button style="padding: 10px" id="retrieveSave" type="button" class="btn">Retrieve Save History</button>
+        <hr>
+        <button type="button" id="save" class="btn btn-success">Save</button>
+        <br><br>
+      </td>
+      <td style='vertical-align: top'>
+          <h3>Screenshots</h3>
+          <div id="slideshow">
+            <div>
+              <center><img height='350px' id="popup-ex" src="img/instructions.png"></img></center>
+            </div>
+            <div>
+              <center><img height='350px' id="popup-ex" src="img/normal-citation.png"></img></center>
+            </div>
+            <div>
+              <center><img height='350px' id="popup-ex" src="img/citation.png"></img></center>
+            </div>
+          </div>
+          
+          <p class='footer' style='right: 6%; position: absolute; bottom: 0;'><a href='https://github.com/ajar98/card_citator_chrome/blob/master/LICENSE'>&copy;</a> Ajay Raj <a href='https://www.linkedin.com/in/ajaynraj'><i class="fa fa-linkedin fa-fw"></i></a> <a href='https://www.github.com/ajar98'><i class="fa fa-github fa-fw"></i></a> <a href='https://www.twitter.com/gunnateam'><i class="fa fa-twitter fa-fw"></i></a> Version 2.1</p>
+        </td>
+    </tr>
+      
+    </div>
+  </body>
+</html>
+
